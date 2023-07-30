@@ -1,5 +1,5 @@
 import React from 'react';
-import BotCollection from './components/BotCollection';
+import Bots from './components/Bots';
 
 import './App.css';
 
@@ -8,7 +8,7 @@ function App() {
     <div>
       
 
-        <BotCollection />
+        <Bots />
       
     </div>
   );
