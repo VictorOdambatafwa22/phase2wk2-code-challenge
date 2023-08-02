@@ -8,6 +8,8 @@ function Bots(){
 
     const [bots, setBots] = useState([])
     const [armyBots, setArmyBots] = useState([])
+    
+
 
   useEffect(() => {
     fetch("http://localhost:3000/bots?q=")
@@ -32,6 +34,11 @@ function removeBotFRomArmy(id){
    const army=armyBots.filter((bot)=> bot.id !==id)
    setArmyBots(army)
     }
+
+    //function deleteBotFromService(id){
+      //const army=armyBots.filter((bot)=> bot.id !==id)
+      //setArmyBots(army)
+      // }
 
 return(
 <div>
